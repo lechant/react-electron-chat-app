@@ -1,0 +1,67 @@
+@import url("../mainCss.css");
+
+.channelInput{
+    width:100%;
+    min-height:6vw;
+    max-height: 12vw;
+    background:var(--main-color);
+    display: grid;
+    flex: none;
+}
+
+.channelInput-container{
+    width:96%;
+    height:80%;
+    max-height:10vw;
+    border-radius: 1.2vw;
+    display: grid;
+    grid-template: 100%/82% repeat(3,1fr);
+    grid-template-areas: "input . emoji send";
+    align-items: center;
+    justify-items:center;
+    background:var(--main-color-light-lite);
+    align-self:center;
+    justify-self: center;
+}
+
+.channelInput-input{
+    width:95%;
+    min-height: 40%;
+    max-height: 80%;
+    text-align: left;
+    margin:0;
+    padding:0;
+    grid-area:input;
+    color:white;
+    font-family: inherit;
+    resize: none;
+    outline: none;
+    word-break: break-all;
+    overflow-y: scroll;
+}
+
+.channelInput-emoji{
+    background: url("img/meh-regular.svg");
+    grid-area:emoji;
+}
+.channelInput-send{
+    background: url("img/paper-plane-solid.svg");
+    grid-area: send;
+}
+
+.channelInput-emoji,
+.channelInput-send{
+    width: 3vw;
+    height:3vw;
+    background-size: 2vw;
+    background-position: center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+}
+
+.channelInput-emoji:hover,
+.channelInput-send:hover{
+    background-color:var(--main-color-bright);
+}
+

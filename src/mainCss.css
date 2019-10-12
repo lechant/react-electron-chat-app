@@ -1,0 +1,19 @@
+:root{
+    --main-color:#282c34;
+    --main-color-lite:#2b313c;
+    --main-color-light-lite:#353e52;
+    --main-color-light:#3f4c6b;
+    --main-color-bright:#727c91;
+}
+
+.mainIconClass{
+    width: 3vw;
+    height:3vw;
+    background-size: 2vw;
+    background-position: center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+    align-self: center;
+    justify-self: center;
+}

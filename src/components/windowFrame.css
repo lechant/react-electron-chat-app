@@ -1,0 +1,66 @@
+@import url('../mainCss.css');
+
+.windowFrame{
+    width:100%;
+    height:100%;
+    max-height: 2vw;
+    display: grid;
+    background: var(--main-color-light-lite);
+    grid-template: 100%/88% repeat(3,1fr);
+}
+
+.windowFrame-bar{
+    height:100%;
+    width:100%;
+}
+
+.windowFrame-icon{
+    height:100%;
+    width:6.5vw;
+    display: block;
+    background: url("img/bridge-logo.svg");
+    background-size:5.5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.windowFrame-minimize,
+.windowFrame-maximize,
+.windowFrame-close{
+    width:100%;
+    height:100%;
+    display: block;
+    align-self:center;
+    justify-self: center;
+    transition:0.1s;
+}
+
+.windowFrame-minimize{
+    background: url('img/minus-solid.svg');
+    background-size:1vw;
+    background-position: center;
+    background-color:none;
+    background-repeat: no-repeat;
+}
+
+.windowFrame-maximize{
+    background: url('img/expand-solid.svg');
+    background-size:1vw;
+    background-position: center;
+    background-color:none;
+    background-repeat: no-repeat;
+}
+
+.windowFrame-close{
+    background: url('img/times-solid.svg');
+    background-size:1vw;
+    background-position: center;
+    background-color:none;
+    background-repeat: no-repeat;
+}
+
+.windowFrame-minimize:hover,
+.windowFrame-maximize:hover,
+.windowFrame-close:hover{
+    background-color: var(--main-color-lite);
+}

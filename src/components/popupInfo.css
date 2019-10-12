@@ -1,0 +1,30 @@
+@import url('../mainCss.css');
+
+.popupInfo-background{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: radial-gradient(circle, rgba(10,10,10,0.4) 0%, rgba(0,0,0,0.4) 100%);
+    display: flex;
+}
+
+.popupInfo-container{
+    width:40vw;
+    height:22vw;
+    border-radius: 0.8vw;
+    background:var(--main-color);
+    box-shadow: 0.1vw 0.1vw 0.4vw 0.05vw #000, -0.1vw -0.1vw 0.4vw 0.05vw #000;
+    margin: auto;
+    display: grid;
+    grid-template: 40% auto/30% 40% auto;
+}
+
+.popupInfo-img{
+    width:7vw;
+    height:7vw;
+    align-self: center;
+    justify-self: center;
+    border-radius:50%;
+}

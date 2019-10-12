@@ -1,0 +1,52 @@
+@import url("../mainCss.css");
+
+.channelNavItem{
+    background:var(--main-color);
+    width:100%;
+    height:5vw;
+    color:white;
+    font-size: 1.2vw;
+    display:grid;
+    grid-template: 50% 50%/25% auto 20%;
+    grid-template-areas: "img name time"
+                         "img description . ";
+}
+
+.channelNavItem:hover{
+    background:var(--main-color-light-lite);
+    box-shadow: inset 0 0 0.3vw 0.05vw #000000;
+}
+
+.channelNavItem-img{
+    width:4vw;
+    height:4vw;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    grid-area:img;
+}
+
+.channelNavItem-name{
+    width:90%;
+    height:60%;
+    font-weight: bold;
+    font-size:1.3vw;
+    text-align: left;
+    grid-area:name;
+    align-self: end;
+}
+
+.channelNavItem-time{
+    width:100%;
+    height:60%;
+    text-align: left;
+    align-self: end;
+    grid-area: time;
+}
+
+.channelNavItem-text{
+    width:90%;
+    height:80%;
+    text-align: left;
+    grid-area: description;
+}

@@ -1,0 +1,3 @@
+https://fontawesome.com/license
+Disclaimer:
+svg icons in this folder are taken from fontawesome, the link above points to the license
